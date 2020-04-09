@@ -12,10 +12,15 @@ class PostsController extends Controller
         $this->middleware('auth');
     }
 
+    /**
+     * Shows the view for creating a new resource.
+     * @return Response
+     */
     public function create()
     {
         return view('posts.create');
     }
+
     public function store()
     {
         $data = request()->validate([
@@ -35,6 +40,7 @@ class PostsController extends Controller
 
         return redirect('/profile/' . auth()->user()->id);
     }
+
     public function show(\App\Post $post)
     {
         return view('posts.show', compact('post'));

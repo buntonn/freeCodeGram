@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="form-group row">
-                    <label for="caption" class="col-md-4 col-form-label">{{ __('Post Caption') }}</label>
+                    <label for="caption" class="col-md-4 col-form-label">Post Caption</label>
 
                     <input id="caption"
                            type="text"
