@@ -13,6 +13,11 @@ class PostsController extends Controller
         $this->middleware('auth');
     }
 
+    public function index()
+    {
+
+    }
+
     /**
      * Shows the view for creating a new resource.
      * @return Response
